@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on different devices -->
+    <title>Ivory mall</title> <!-- Title of the webpage (appears in browser tab) -->
+    
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: Georgia, sans-serif; /* Sets the font for the entire page */
+    }
+</style>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">        
+                <div class="social-icons d-flex justify-content-start"><br><br>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div> 
+            <a href="#location" class="location-icon">
+                <i class="fas fa-map-marker-alt"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Navbar items aligned to the right -->
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li> <!-- Home link -->
+                    <li class="nav-item"><a class="nav-link" href="#shops">Shops</a></li> <!-- Shops link -->
+                    <li class="nav-item"><a class="nav-link" href="#food-court">Dine</a></li> <!-- Food Court link -->
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li> <!-- Events link -->
+                    <li class="nav-item"><a class="nav-link" href="#leisure">Leisure</a></li> <!-- Leisure link -->
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> <!-- Service link -->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> <!-- Contact link -->
+                    <li class="nav-item"><a class="nav-link" href="#search"><i class="fas fa-search"></i> Search</a></li> <!-- Search button -->
+                    <li class="nav-item"><a class="nav-link" href="#signup"><i class="fas fa-user-plus"></i> Sign Up</a></li> <!-- Sign Up button -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Main Banner) -->
+    <header class="hero-section">
+        <div class="container text-center text-white"> <!-- Centered text in white color -->
+            <h1><b>Welcome to IVORY MALL</b></h1> <!-- Main heading -->
+            <p>Your favorite shopping destination!</p> <!-- Subheading -->
+<button class="btn btn-primary" onclick="location.href='find-your-way.html'">Explore More</button>
+        </div>
+    </header>
+
+    <!-- Featured Shops Section -->
+    <section id="shops" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Featured Shops</h2> <!-- Section title -->
+            <div class="row"> <!-- Row to hold shop cards -->
+                <div class="col-md-4 hover-effect"> <!-- Column for each shop -->
+                    <div class="card">
+                        <img src="images/shop1.jpg" class="card-img-top" alt="Shop 1"> <!-- Shop 1 image -->
+                        <div class="card-body">
+                           
+                         <h5 class="card-title"> <a href="fashion.html" target="_blank">Fashion Hub</a> </h5>  <!-- Shop name -->
+                            <p class="card-text">Latest clothing and accessories.</p> <!-- Shop description -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hover-effect"> <!-- Another shop column -->
+                    <div class="card">
+                        <img src="images/shop2.jpg" class="card-img-top" alt="Shop 2"> <!-- Shop 2 image -->
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="tech.html" target="_blank">Tech World</a></h5> <!-- Shop name -->
+                            <p class="card-text">The latest gadgets and tech products.</p> <!-- Shop description -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hover-effect"> <!-- Another shop column -->
+                    <div class="card">
+                        <img src="images/shop3.jpg" class="card-img-top" alt="Shop 3"> <!-- Shop 3 image -->
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="homedecor.html" target="_blank">Home Decor</a></h5> <!-- Shop name -->
+                            <p class="card-text">Stylish furniture and home accessories.</p> <!-- Shop description -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Court Section -->
+    <section id="food-court" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Dine</h2> <!-- Section title -->
+            <div class="row">
+                <div class="col-md-6 hover-effect"> <!-- Column for Foodie's Delight -->
+                    <h4>Foodie's Delight</h4> <!-- Food court section title -->
+                    <p>A variety of food options from all around the world.</p> <!-- Description -->
+                    <a href="foodies-delight.html" target="_blank">
+                 <img src="images/food-court.jpg" class="img-fluid" alt="Food Court"> <!-- Food court image -->
+                </a>
+</div>
+                <div class="col-md-6 hover-effect"> <!-- Column for Quick Bites -->
+                    <h4>Quick Bites</h4> <!-- Food court section title -->
+                    <p>Fast food and snacks for a quick bite during shopping.</p> <!-- Description -->
+                    <a href="quick-bites.html" target="_blank">
+                 <img src="images/fast-food.jpg" class="img-fluid" alt="Quick Bites"> <!-- Quick bites image -->
+                </a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Upcoming Events</h2> <!-- Section title -->
+            <div class="row">
+                <div class="col-md-6"> <!-- Column for Annual Sale event -->
+                    <h4>Annual Sale</h4> <!-- Event title -->
+                    <p>Join us for the biggest sale of the year!</p> <!-- Event description -->
+                    <video width="100%" controls>
+                        <source src="images/sale-video.mp4" type="video/mp4"> <!-- Event video -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-6"> <!-- Column for Live Concert event -->
+                    <h4>Live Concert</h4> <!-- Event title -->
+                    <p>Enjoy live music from top artists.</p> <!-- Event description -->
+                    <video width="100%" controls>
+                        <source src="images/concert-video.mp4" type="video/mp4"> <!-- Event video -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Leisure Section -->
+<section id="leisure" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Leisure</h2> <!-- Section title -->
+        <div class="row text-center">
+            <div class="col-md-3 hover-effect">
+                <img src="images/games.jpg" alt="Games" class="img-fluid mb-3" style="height: 250px; object-fit: cover;">
+                <h5><b><i>GAMES</i></b></h5>
+                <p>Enjoy arcade games, VR experiences, and more.</p>
+            </div>
+            <div class="col-md-3 hover-effect">
+                <img src="images/inox-movies.jpg" alt="INOX Movies" class="img-fluid mb-3" style="height: 250px; object-fit: cover;">
+                <h5><b><i>INOX MOVIES</i></b></h5>
+                <p>Watch the latest blockbusters in our state-of-the-art cinema.</p>
+            </div>
+            <div class="col-md-3 hover-effect">
+                <img src="images/salon-spa.jpg" alt="Salon & Spa" class="img-fluid mb-3" style="height: 250px; object-fit: cover;">
+                <h5><b><i>SALON & SPA</i></b></h5>
+                <p>Relax and rejuvenate with premium spa and beauty services.</p>
+            </div>
+            <div class="col-md-3 hover-effect">
+                <img src="images/fan-park.jpg" alt="Fan Park" class="img-fluid mb-3" style="height: 250px; object-fit: cover;">
+                <h5><b><i>FAN PARK</i></b></h5>
+                <p>Cheer for your favorite teams at our sports fan zone.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-parking fa-3x mb-3"></i>
+                    <h5>Parking & Transport</h5>
+                    <p>Ample parking space and shuttle services to nearby areas.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-wheelchair fa-3x mb-3"></i>
+                    <h5>Services for Specially Abled</h5>
+                    <p>Wheelchair access, priority lanes, and assistance for specially abled individuals.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-child fa-3x mb-3"></i>
+                    <h5>Family Services</h5>
+                    <p>Baby care rooms, play areas, and family-friendly amenities.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-ambulance fa-3x mb-3"></i>
+                    <h5>Emergency Support</h5>
+                    <p>First aid stations and 24/7 medical assistance for emergencies.</p>
+                </div>
+            </div>
+        </div> <br> <hr>
+
+
+<section id="Need help?" class="py-5">
+<center><h3><b><u>NEED HELP?</u></b></h3></center>
+<div class="container my-4">
+  <div class="row align-items-center">
+    <!-- Column for Image -->
+    <div class="col-md-4">
+<img src="images/pa.jpg" alt="Need Help?" width="300" height="300">
+</div>
+<div class="col-md-8">
+      <h3><strong>GET PERSONAL ASSISTANCE</strong></h3>
+      <p>
+        The Digital Concierge Service is your personal secretary. It will assist you in making informed shopping decisions and notifies you of any limited-time offers and new arrivals at the mall. It also helps you choose the ideal gift for your loved ones for any occasion. All you need to do is type in your query and relax as our concierge answers your queries.
+      </p>
+<br>
+<a href="contact.html" style="display: inline-block; padding: 10px 20px; background-color: black; color: #fff; text-decoration: none; border-radius: 4px;">
+  CONTACT CONCIERGE
+</a>
+
+    </section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- Success message -->
+        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+            Form submitted successfully! We will get back to you soon.
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="py-4 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-secondary">
+          <h5>Contact Us</h5>
+          <p>Email: support@Ivory.com</p>
+          <p>Phone: +91 8310766642</p>
+          <p>Address: 123 Frazer Town, Bangalore</p>
+        </div>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-secondary text-center">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-secondary">
+          <h5>Legal</h5>
+          <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Refund Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="text-center mt-4">
+            <h4>Visit Us At:</h4>
+            <p>123 Main Street, Ivory mall, Bangalore, India</p>
+        </div>
+
+        <!-- Google Map Embed -->
+        <div class="mt-4">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2421586820174!2d77.59369131527061!3d12.971598318156854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1677c0a76075%3A0x72acdf8b2e3f92e8!2sMCC%20Galleria%20Mall!5e0!3m2!1sen!2sin!4v1675761833490!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+            <center><div class="col-md-4">
+          <div class="footer-box p-3 border rounded bg-secondary">
+        <div class="footer-section newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+</center>
+            </form>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-center py-3">
+    <p>&copy; 2025 Ivory mall. All Rights Reserved.</p> <!-- Footer content -->
+    <p>Made by Suhana Liyakath</p>
+    <p>email : suhanasonu13@gmail.com</p>
+</footer>
+
+<style>
+    /* Apply custom color to footer text */
+    footer p {
+        color: white !important;  /* Ensures text is white */
+    }
+</style>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents the form from submitting
+        document.getElementById("successMessage").style.display = "block"; // Show success message
+        this.reset(); // Optional: Reset form fields after submission
+    });
+</script>
+
+<!-- Bootstrap JS and custom script for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Interactive JavaScript (optional)
+        document.addEventListener("DOMContentLoaded", function () {
+            const exploreButton = document.querySelector('.btn-primary');
+            exploreButton.addEventListener('click', function () {
+                alert("Explore the mall sections!");
+            });
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Custom CSS for styling the page */
+body {
+    font-family: Georgia, sans-serif; /* Sets the font for the entire page */
+    margin: 10; /* Removes default margin */
+    padding: 20; /* Removes default padding */
+}
+
+.hero-section {
+    background: url('images/mall-banner.jpg') no-repeat center center/cover; /* Background image for the hero section */
+    color: White; /* Text color */
+    padding: 80px 0; /* Padding at the top and bottom */
+}
+.hero-section h1,p {
+color: black !important; /* Force black color for header text */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Font size for the main heading */
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* Font size for the subtitle */
+}
+
+.card-img-top {
+    height: 200px; /* Sets height of images inside cards */
+    object-fit: cover; /* Ensures the images are not distorted */
+}
+
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #ffffff; /* White text color for footer */
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+}
+/* Style for the location icon */
+.location-icon {
+position: fixed; /* Fixed positioning for it to stay visible on the page */
+left: 20px; /* Position it 20px from the left */
+top: 20px; /* Position it 20px from the top */
+font-size: 2rem; /* Larger icon */
+color: white; /* White color for the icon */
+background-color: rgba(0, 0, 0, 0.6); /* Slight black background for better visibility */
+padding: 10px; /* Padding around the icon */
+border-radius: 50%; /* Circular shape */
+z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.location-icon:hover {
+background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background on hover */
+cursor: pointer; /* Pointer cursor on hover */
+}
+
+.location-icon i {
+
+color: white;
+margin: 0 10px;
+font-size: 1.5rem;
+}
+
+/* General section design */
+section {
+margin-bottom: 30px; /* Adds spacing between sections */
+border: 2px solid #ddd; /* Light border around sections */
+border-radius: 10px; /* Rounded corners for sections */
+padding: 20px; /* Adds spacing inside sections */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+background-color: #f9f9f9; /* Light background color */
+}
+
+/* Section titles */
+section h2 {
+border-bottom: 3px solid #007bff; /* Blue underline for section titles */
+display: inline-block; /* Keeps underline constrained to text width */
+padding-bottom: 5px; /* Adds spacing between text and underline */
+margin-bottom: 20px; /* Adds spacing below the title */
+color: #333; /* Ensures titles stand out */
+}
+
+/* Specific styles for Featured Shops section */
+#shops {
+background: linear-gradient(to bottom, #fff, #e6e6e6); /* Gradient background */
+}
+
+/* Specific styles for Dine section */
+#food-court {
+background: linear-gradient(to bottom, #fdf8f0, #f5e8d7); /* Warm gradient background */
+}
+
+/* Specific styles for Events section */
+#events {
+background: linear-gradient(to bottom, #f0f4f8, #e8edf3); /* Cool gradient background */
+}
+
+/* Specific styles for Leisure section */
+#leisure {
+background: linear-gradient(to bottom, #f7f9fc, #dfe5ed); /* Subtle gradient background */
+}
+
+/* Specific styles for Services section */
+#services {
+background: linear-gradient(to bottom, #f8f8f8, #ececec); /* Neutral gradient background */
+}
+
+/* Specific styles for Contact section */
+#contact {
+background: linear-gradient(to bottom, #f7f5f3, #ece9e6); /* Neutral gradient background */
+border: 2px dashed #aaa; /* Dashed border for a unique design */
+}
+
+/* Highlight card designs */
+.card {
+border: 1px solid #ddd; /* Light border for cards */
+border-radius: 10px; /* Rounded corners for cards */
+overflow: hidden; /* Ensures rounded corners apply to images */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to cards */
+}
+
+/* Button customization */
+button.btn-primary {
+background-color: #007bff; /* Custom button color */
+border: none; /* Removes button border */
+border-radius: 5px; /* Rounded corners for button */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+button.btn-primary:hover {
+background-color: #0056b3; /* Darker shade on hover */
+transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Bluffing effect on hover */
+.hover-effect img {
+transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.hover-effect img:hover {
+transform: scale(1.1); /* Slight zoom effect */
+filter: brightness(80%); /* Dim the image for emphasis */
+}
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  /* Flex Container for the Footer */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px  wrap; /* Ensure it wraps for smaller screens */
+  }
+  
+  /* Logo Section */
+  .footer-logo img {
+    width: 250px;
+    max-width: 100%; /* Make it responsive */
+  }
+  
+  /* Links Section */
+  .footer-links-container {
+    display: flex;
+    gap: 40px; /* Add space between the two link sections */
+    flex: 1; /* Allow it to take remaining space */
+  }
+  
+  footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+  }
+  
+  .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+      color: #f8b400; /* Change color on hover */
+  } 
+  
+  .newsletter {
+    display: block; /* Ensure it takes a new line */
+    text-align: center; /* Center the content */
+    margin-top: 20px; /* Adds space between elements, adjust as needed */
+    width: 100%; /* Ensures the footer spans across the width of the page */
+  }
